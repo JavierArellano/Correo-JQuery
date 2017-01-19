@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <noscript>JavaScript no esta habilitado</noscript>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <title>Todo Pelis</title>
+    <style>
+        body{
+            background-color: darkkhaki;
+        }
+        input{
+            color: black;
+        }
+        button{
+            color:black;
+        }
+        #contenedor{
+            padding: 2px 16px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        #correo{
+            background-color: white;
+            width: 100%;
+            margin-bottom: 6px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+        #correo:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.56);
+        }
+    </style>
+</head>
+<body>
+   <div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+       <div class="navbar-brand">
+           <input type="text" placeholder="Búsqueda"><button id="buscar">Buscar</button>
+        </div>
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse navHeaderCollapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Películas</a></li>
+                <li><a href="#">Series</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Redes Sociales<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Gmail</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div id="contenedor"></div>
+</body>
+</html>
